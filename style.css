@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+   background-image: url(https://scontent.ffru1-3.fna.fbcdn.net/v/t39.30808-6/339645300_181123054736967_336798497696569565_n.jpg?stp=c207.0.540.540a_dst-jpg_s851x315&_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeGGutk28Pc7gcgXTDU3IC9vTjPFQd8nX9lOM8VB3ydf2VqT57QatrKbdchs2Ye1xkWh6LohhoVw4EsLCQIdsiOo&_nc_ohc=IICaSxuFVocAX-r4EnX&_nc_ht=scontent.ffru1-3.fna&oh=00_AfDl8h7hVfAdj-sBcv8A0rq4ZD7_szqV5yONI7hv7Ba_Fw&oe=64B52F04);
+   width: auto;
+   background-position: center;
+   background-size: cover;
+
+}
+
+.icon {
+   display: flex;
+  /* margin-top: 200px;
+margin-left: 370px; */
+transition: all ease-in-out;
+margin-left: 30px;
+
+}
+
+
+.icon li  a{
+   font-size: 30px;
+   color:blue;
+   padding-left: 20px;
+cursor: pointer;
+}
+.icon li a i {
+    transition: 2s;
+    margin-top: 20px;
+   }
+.icon li:hover {
+    width: 250px;
+    height: 50px;
+   border-radius: 40px;
+
+    transform: scale(1.2);
+    box-shadow: 0px 0px 7px 7px hotpink;
+}
+.icon li a i:hover::before {
+    color:rgb(255, 0, 17);
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 10px 5px  rgb(234, 255, 0);
+}
+
+
+.icon li {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   border: 2px solid black;
+    list-style: none;
+    margin: 16px;
+    background:springgreen;
+ 
+    
+   }
+   
+
+
+   .icon li::before {
+    content: 'hello!';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 70px;
+    color:white;
+    font-size: 20px;
+    /* height: 100%;
+    width: 100%;
+    border: 3px solid goldenrod; */
+    /* transition: all 0.5s ease-in; */
+}
+.icon li:hover a i {
+    transform: scale(1.4);
+    color: rgb(255, 98, 0);
+    transform: rotate(360deg);
+}
+@media (max-width:830px) {
+    .icon {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+    }
+}
+@media (max-width:560px) {
+    .body img {
+       width: auto; 
+    }
+    .icon {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+      
+    }
+}
+
